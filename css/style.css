@@ -1,0 +1,349 @@
+/* everything */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fdd8f2;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+#content, .middle {
+    flex: 1 0 auto;
+}
+
+html {
+    height: 100%;
+}
+
+/* === top === */
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background: #d5d4f9;
+    border-bottom: 1px solid #d7ecd1;
+}
+
+#header h1 {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+#header h4 {
+    cursor: pointer;
+}
+
+#header :hover {
+    font-size: 18px;
+    font-weight: bolder;
+    text-shadow: 3px 1px 2px #c4449e;
+}
+
+
+/* === middle === */
+
+/* header of middle */
+#upper-content {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+#content-image {
+    width: 60%;
+    margin: 30px 0;
+    border-radius: 10px;
+}
+
+/* === cookies === */
+#cookie-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: auto;
+    justify-content: center;
+    gap: 15px;
+    padding: 25px 5%;
+}
+
+.cookie {
+    min-width: 300px;
+    background: #e9c4f2;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    border: 5px solid #dcdbf5;
+    box-shadow: 0 10px 25px rgba(70, 70, 70, 0.15);   
+}
+
+.c-img img {
+    width: 80%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* === button s === */
+.c-desc button {
+    background-color: #ff8fdd;
+    color: black;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    margin-top: 15px;
+    font-weight: bolder;
+    transition: color 0.3s ease, transform 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.c-desc button:hover {
+    background-color: #c4449e;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+/* === bottom === */
+#footer {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background: #d5d4f9;
+    border-top: 1px solid #d7ecd1;
+    font-size: 1.2rem;
+}
+
+#footer #footer-left {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#footer #footer-right {
+    cursor: pointer;
+}
+
+#footer :hover {
+    font-size: 21px;
+    font-weight: bolder;
+    text-shadow: -2px 1px 2px #c4449e;
+}
+
+#footContactInPHP a {
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+#footContactInPHP a:hover {
+    font-size: 21px;
+    font-weight: bolder;
+    text-shadow: -2px 1px 2px #c4449e;
+}
+
+/*=== Table ===*/
+.scroll {
+    max-height: 400px;
+    overflow-y: auto;
+    width: 60%;
+    margin: 30px auto;
+    border: 20px solid #dcdbf5;
+    border-radius: 16px;
+    background: #dcdbf5;
+}
+
+.scroll table {
+    width: 100%;
+    margin: 0;
+    border: none;
+}
+
+th,
+td {
+    padding: 20px;
+    text-align: left;
+    border-bottom: 5px solid #c3d2e2;
+}
+
+.scroll {
+    scrollbar-width: thin;
+    scrollbar-color: #ff8fdd #dcdbf5;
+}
+
+/*=== image hitbox ===*/
+.main-image-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 60%;
+    margin: 15px 0;
+}
+
+#content-image {
+    width: 100% !important;
+    margin: 0 !important;
+    display: block;
+}
+
+.main-image-wrapper #hitbox_btn {
+    position: absolute;
+    top: 33%;
+    left: 6%;
+    width: 100px;
+    height: 100px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    outline: ridge;
+}
+
+/* login table */
+label {
+    font-weight: bold;
+}
+
+#login-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+}
+
+#login-container td {
+    border-bottom: none !important;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    background-color: #fef0f9;
+    font-family: inherit;
+}
+
+.login-table {
+    width: 400px !important;
+    border-width: 10px !important;
+}
+
+/* ==== input comment box ===*/
+.form-section {
+    margin: center;
+    flex: 1;
+    width: 70%;
+    margin: 30px auto;
+    border: 20px solid #dcdbf5;
+    border-radius: 16px;
+    border-collapse: separate;
+    background: #dcdbf5;
+}
+
+input[name="user_name"] {
+    box-sizing: border-box;
+    margin-top: 10px;
+    resize: none;
+    width: 100%;
+    border: 5px solid #c3d2e2;
+    border-radius: 10px;
+    padding: 7px;
+}
+
+textarea[name="comment"] {
+    box-sizing: border-box;
+    margin-top: 10px;
+    resize: none;
+    width: 100%;
+    height: 100px;
+    border: 5px solid #c3d2e2;
+    border-radius: 16px;
+    padding: 5px;
+}
+
+button[name="submit_comment"] {
+    background-color: #ff8fdd;
+    color: black;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    margin-top: 15px;
+    font-weight: bolder;
+    transition: color 0.3s ease, transform 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button[name="submit_comment"]:hover {
+    background-color: #c4449e;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+/* === admin table === */
+.admin-btn {
+    text-decoration: none;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    display: inline-block;
+    margin: 2px;
+    transition: transform 0.2s ease;
+}
+.admin-btn.update {
+    background-color: #abc0a5;
+    color: black;
+}
+.admin-btn.delete {
+    background-color: #ffb3b3;
+    color: black;
+}
+.admin-btn:hover {
+    transform: scale(1.05);
+    filter: brightness(90%);
+    cursor: pointer;
+}
+#admin-content {
+    flex: 1 0 auto;
+}
+#admin-content .form-section {
+    background: #dcdbf5;
+    padding: 30px;
+    text-align: left;
+    flex: 1 0 auto;
+}
+#admin-content textarea {
+    width: 100%;
+    min-height: 120px;
+    padding: 15px;
+    border: 5px solid #c3d2e2;
+    border-radius: 12px;
+    font-family: inherit;
+    resize: vertical;
+}
+.cancel-link {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #fef0f9; 
+    color: #c4449e;            
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    border: 2px solid #c4449e;
+    transition: all 0.3s ease;
+}
+.cancel-link:hover {
+    background-color: #c4449e;
+    color: white;
+    transform: scale(1.05);
+}

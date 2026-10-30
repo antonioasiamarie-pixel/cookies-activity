@@ -1,0 +1,136 @@
+/* everything */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #fdd8f2;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* top */
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background:#d5d4f9;
+    border-bottom: 1px solid #d7ecd1;
+}
+#header h1{
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+#header h4{
+    cursor: pointer;
+}
+#header :hover{
+    font-size: 18px ;
+    font-weight: bolder;
+    text-shadow: 3px 1px 2px #c4449e;
+}
+
+/* middle */
+.middle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+}.image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    margin-top: 15px;
+}
+.middle .desc ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+}
+.middle .desc li {
+    font-weight: bold; 
+    margin-bottom: 8px;
+}
+.desc p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+.middle .title{
+    margin: 8px;
+}
+.cookie-profile-card {
+    background-color: #e9c4f2;
+    padding: 30px;
+    border-radius: 30px;  
+    width: 90%;
+    max-width: 550px;
+    margin: 40px auto;
+    border: 5px solid #dcdbf5;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+.cookie-profile-card .image img {
+    width: 100%;
+    border-radius: 15px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.cookie-profile-card .title h1 {
+    margin-bottom: 15px;
+}
+
+/* bottom */
+#footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background:#d5d4f9;
+    border-bottom: 1px solid #d7ecd1;
+}
+#footer #footer-left {
+    font-size: 1.2rem;
+    text-decoration: none; 
+    color: inherit;        
+    cursor: pointer;
+}
+#footer #footer-right{
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+#footer :hover{
+    font-size: 21px ;
+    font-weight: bolder;
+    text-shadow: -2px 1px 2px #c4449e;
+}
+/* Back button */
+.card-footer-action {
+    margin-top: -20px;
+    margin-bottom: 40px;
+    z-index: 1;
+}
+.menu-btn {
+    background-color: #ff8fdd;
+    color: black;
+    border: 3px solid #dcdbf5;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-family: inherit;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.menu-btn:hover {
+    background-color: #c4449e;
+    color: white;
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
