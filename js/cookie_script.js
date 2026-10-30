@@ -14,7 +14,7 @@ top_contact_btn.addEventListener('click', function() {
 //the bottom left thng
 const about_btn = document.getElementById('about');
 about_btn.addEventListener('click', function() {
-    window.location.href = '../about.html';
+    window.location.href = 'php-to-html/remarks.html';
 });
 
 //the bottom right one
