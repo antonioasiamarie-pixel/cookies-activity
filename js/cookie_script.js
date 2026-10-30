@@ -14,11 +14,11 @@ top_contact_btn.addEventListener('click', function() {
 //the bottom left thng
 const about_btn = document.getElementById('about');
 about_btn.addEventListener('click', function() {
-    window.location.href = 'php-to-html/remarks.html';
+    window.location.href = '../about.html';
 });
 
 //the bottom right one
 const foot_contact_btn = document.getElementById('footContact');
 foot_contact_btn.addEventListener('click', function() {
-    window.location.href = '../php/remarks.php';
+    window.location.href = 'php-to-html/remarks.html';
 });
