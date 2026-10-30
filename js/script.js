@@ -69,7 +69,7 @@
     const browse_btn = document.getElementById('browse_btn');
         if (browse_btn) {
             browse_btn.addEventListener('click', function() {
-                window.location.href = '/Antonio-Website - Copy/index.html';
+                window.location.href = 'index.html';
             });
         }
 
