@@ -11,7 +11,7 @@
     const top_contact_btn = document.getElementById('topContact');
         if (top_contact_btn) {
             top_contact_btn.addEventListener('click', function() {
-                window.location.href = '/Antonio-Website - Copy/comment.html';
+                window.location.href = 'comment.html';
             });
         }
 
@@ -19,7 +19,7 @@
     const about_btn = document.getElementById('about'); 
         if (about_btn) {
             about_btn.addEventListener('click', function() {
-                window.location.href = '/Antonio-Website - Copy/about.html';
+                window.location.href = 'about.html';
             });
         }
 
