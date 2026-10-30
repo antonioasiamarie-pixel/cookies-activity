@@ -27,7 +27,7 @@
     const foot_contact_btn = document.getElementById('footContact');
         if (foot_contact_btn) {
             foot_contact_btn.addEventListener('click', function() {
-                window.location.href = 'php/remarks.php';
+                window.location.href = 'php-to-html/remarks.html';
             });
         }
 
